@@ -166,7 +166,7 @@ class Puzzle {
 				sort(all(open), [&](Node& a, Node& b){ return a.fvalue < b.fvalue; });
 			}
 
-			cout << ENDL << "Movimientos: " << movs << ENDL;
+			cout << ENDL << "Movimientos: " << movs - 1 << ENDL;
 			for(const auto& node: steps){
 				cout << node << ENDL;
 			}
